@@ -1,136 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <style>
-        html, body {
-            height: 100%;
-        }
-
-        .hero.is-primary {
-            height: 100vh;
-        }
-
-        footer {
-            background-color: #f5f5f5;
-        }
-    </style>
+    <link rel="stylesheet" href="bulma.css">
 </head>
 
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar is-link">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <h1 class="title is-4">Your Name</h1>
-            </a>
+    <section class="hero is-info is-large">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active"> Home </a>
+                            <a class="navbar-item"> Examples </a>
+                            <a class="navbar-item"> Documentation </a>
+                            <span class="navbar-item">
+                                <a class="button is-info is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Download</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#about">About Me</a>
-                <a class="navbar-item" href="#services">Services</a>
-                <a class="navbar-item" href="#portfolio">Portfolio</a>
-                <a class="navbar-item" href="#blog">Blog</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Header Section (Hero) -->
-    <section class="hero is-primary">
         <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Welcome to My Personal Website
-                </h1>
-                <h2 class="subtitle">
-                    Hello, I'm Your Name. I'm a web developer.
-                </h2>
+            <div class="container has-text-centered">
+                <p class="title">Title</p>
+                <p class="subtitle">Subtitle</p>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="title">About Me</h2>
-            <p>Hello! I'm a passionate web developer with experience in building websites and applications. I love coding and learning new technologies.</p>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li class="is-active">
+                            <a>Overview</a>
+                        </li>
+                        <li>
+                            <a>Modifiers</a>
+                        </li>
+                        <li>
+                            <a>Grid</a>
+                        </li>
+                        <li>
+                            <a>Elements</a>
+                        </li>
+                        <li>
+                            <a>Components</a>
+                        </li>
+                        <li>
+                            <a>Layout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="title">My Services</h2>
-            <p>I offer web development, design, and consulting services to help you build and improve your online presence.</p>
-        </div>
+    <section id="content">
+        <section class="section is-medium">
+            <h1 class="title">Medium section</h1>
+            <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like
+                the one you're currently reading.
+            </h2>
+        </section>
+        <section class="section is-medium">
+            <h1 class="title">Medium section</h1>
+            <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like
+                the one you're currently reading.
+            </h2>
+        </section>
+        <section class="section is-medium">
+            <h1 class="title">Medium section</h1>
+            <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like
+                the one you're currently reading.
+            </h2>
+        </section>
     </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2 class="title">Portfolio</h2>
-            <p>Here are a few projects I’ve worked on:</p>
-            <ul>
-                <li><strong>Project 1:</strong> Description of the project.</li>
-                <li><strong>Project 2:</strong> Description of the project.</li>
-                <li><strong>Project 3:</strong> Description of the project.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container">
-            <h2 class="title">Blog</h2>
-            <p>Check out my latest posts about web development and other topics!</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="title">Contact Me</h2>
-            <form action="#" method="POST">
-                <div class="field">
-                    <label class="label" for="name">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" id="name" name="name" placeholder="Your Name">
+    <article class="media">
+        <figure class="media-left">
+            <p class="image is-64x64">
+                <img src="https://bulma.io/assets/images/placeholders/128x128.png" />
+            </p>
+        </figure>
+        <div class="media-content">
+            <div class="field">
+                <p class="control">
+                    <textarea class="textarea" placeholder="Add a comment..."></textarea>
+                </p>
+            </div>
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a class="button is-info">Submit</a>
                     </div>
                 </div>
-                <div class="field">
-                    <label class="label" for="email">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" id="email" name="email" placeholder="Your Email">
+                <div class="level-right">
+                    <div class="level-item">
+                        <label class="checkbox">
+                            <input type="checkbox" /> Press enter to submit
+                        </label>
                     </div>
                 </div>
-                <div class="field">
-                    <label class="label" for="message">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" id="message" name="message" placeholder="Your Message"></textarea>
-                    </div>
-                </div>
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link" type="submit">Send Message</button>
-                    </div>
-                </div>
-            </form>
+            </nav>
         </div>
-    </section>
-
-    <!-- Footer Section -->
+    </article>
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>© 2025 Your Name</p>
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+                The source code is licensed
+                <a href="https://opensource.org/license/mit">MIT</a>. The
+                website content is licensed
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//">CC BY NC SA 4.0</a>.
+            </p>
         </div>
     </footer>
-
 </body>
 
 </html>
