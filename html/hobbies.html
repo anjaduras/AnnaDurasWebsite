@@ -2,107 +2,112 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="../css/bulma.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="../css/bulma.css">
 </head>
 
 <body>
-    <section class="hero is-primary is-medium" style="background-image: url('../images/hero.jpg'); background-size: cover; background-position: center;">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
-                </a>
-                <span class="navbar-burger" data-target="navbarMenuHeroA">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
-                <div class="navbar-end">
-                  <a class="navbar-item is-active"> Home </a>
-                  <a class="navbar-item"> Examples </a>
-                  <a class="navbar-item"> Documentation </a>
-                  <span class="navbar-item">
-                    <a class="button is-primary is-inverted">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Download</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </nav>
+  <section class="hero is-primary is-medium"
+  style="background-image: url('../images/hobbyhero.jpg'); background-size: cover; background-position: center; position: relative;">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
+          </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-      
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <p class="title">Title</p>
-            <p class="subtitle">Subtitle</p>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="./main.html"> Home </a>
+            <a class="navbar-item"> Theme1 </a>
+            <a class="navbar-item"> Button2 </a>
+            <span class="navbar-item">
+              <a class="button is-primary is-inverted">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span>
           </div>
         </div>
-      
-        <!-- Hero footer: will stick at the bottom -->
-        <div class="hero-foot">
-          <nav class="tabs">
-            <div class="container">
-              <ul>
-                <li class="is-active"><a>Overview</a></li>
-                <li><a>Modifiers</a></li>
-                <li><a>Grid</a></li>
-                <li><a>Elements</a></li>
-                <li><a>Components</a></li>
-                <li><a>Layout</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </section>
-    <section id="content">
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
-            <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
-            </h2>
-        </section>
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
-            <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
-            </h2>
-        </section>
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
-            <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
-            </h2>
-        </section>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title" style="font-size: 80px; position: relative;">My hobbies</h1>
+      <p class="subtitle">Drawing, crafting and languages</p>
+    </div>
+    
+    <!-- Left and Right GIFs -->
+    <img src="../images/cloves.webp" alt="Left Gif" class="largegif-overlay-left">
+    <img src="../images/cloves.webp" alt="Right Gif" class="largegif-overlay-right">
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs is-boxed">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>Drawing</a></li>
+          <li><a>Cooking</a></li>
+          <li><a>Crafting</a></li>
+          <li><a>Languages</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section id="content">
+    <section class="section is-medium">
+      <h1 class="title">Medium section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like
+        the one you're currently reading.
+      </h2>
     </section>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-                The source code is licensed
-                <a href="https://opensource.org/license/mit">MIT</a>. The
-                website content is licensed
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//">CC BY NC SA 4.0</a>.
-            </p>
-        </div>
-    </footer>
+    <section class="section is-medium">
+      <h1 class="title">Medium section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like
+        the one you're currently reading.
+      </h2>
+    </section>
+    <section class="section is-medium">
+      <h1 class="title">Medium section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like
+        the one you're currently reading.
+      </h2>
+    </section>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+        The source code is licensed
+        <a href="https://opensource.org/license/mit">MIT</a>. The
+        website content is licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -7,9 +7,11 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <header>
     <section class="hero is-fullheight"
         style="background-image: url('../images/hero.jpg'); background-size: cover; background-position: center;">
         <div class="hero-head">
@@ -28,9 +30,8 @@
                     </div>
                     <div id="navbarMenuHeroB" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active"> Home </a>
-                            <a class="navbar-item"> Examples </a>
-                            <a class="navbar-item"> Documentation </a>
+                            <a class="navbar-item"> Theme1 </a>
+                            <a class="navbar-item"> Button2 </a>
                             <span class="navbar-item">
                                 <a class="button is-info is-inverted">
                                     <span class="icon">
@@ -47,9 +48,11 @@
 
         <div class="hero-body">
             <div class="container has-text-centered">
-                <p class="title">Title</p>
-                <p class="subtitle">Subtitle</p>
+                <h1 class="title" style="font-size: 80px; color: rgb(34, 17, 13);">Anna Duras</h1>
+                <p class="subtitle">Welcome to my personal website!</p>
             </div>
+            <img src="../images/stars.gif" alt="Coffee" class="largegif-overlay-left">
+            <img src="../images/stars.gif" alt="Cloves" class="largegif-overlay-right">
         </div>
 
         <div class="hero-foot">
@@ -60,25 +63,24 @@
                             <a>Overview</a>
                         </li>
                         <li>
-                            <a>Modifiers</a>
+                            <a href="./hobbies.html">Hobbies</a>
                         </li>
                         <li>
-                            <a>Grid</a>
+                            <a href="./career.html">Career</a>
                         </li>
                         <li>
-                            <a>Elements</a>
+                            <a href="./social.html">Social</a>
                         </li>
                         <li>
-                            <a>Components</a>
-                        </li>
-                        <li>
-                            <a>Layout</a>
+                            <a href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
+</header>
+
     <section id="content">
         <section class="section is-medium">
             <h1 class="title">Medium section</h1>
@@ -102,34 +104,7 @@
             </h2>
         </section>
     </section>
-    <article class="media">
-        <figure class="media-left">
-            <p class="image is-64x64">
-                <img src="https://bulma.io/assets/images/placeholders/128x128.png" />
-            </p>
-        </figure>
-        <div class="media-content">
-            <div class="field">
-                <p class="control">
-                    <textarea class="textarea" placeholder="Add a comment..."></textarea>
-                </p>
-            </div>
-            <nav class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <a class="button is-info">Submit</a>
-                    </div>
-                </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <label class="checkbox">
-                            <input type="checkbox" /> Press enter to submit
-                        </label>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </article>
+
     <footer class="footer">
         <div class="content has-text-centered">
             <p>

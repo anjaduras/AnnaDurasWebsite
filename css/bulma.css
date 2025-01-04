@@ -1,1 +1,42 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap');
+
+/* Make sure the hero section is positioned relatively so the absolute positioning works */
+.hero-body {
+  position: relative;
+}
+
+/* Position and style the left GIF */
+.largegif-overlay-left {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 20%;
+  height: auto;
+  transform: scaleX(-1); /* Optional: Flip the GIF horizontally */
+  z-index: 1;
+}
+
+/* Position and style the right GIF */
+.largegif-overlay-right {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 20%;
+  height: auto;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "Barrio", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
