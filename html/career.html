@@ -7,6 +7,7 @@
   <title>Hello Bulma!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <link rel="stylesheet" href="../css/bulma.css">
+  <script src="../js/tabs.js"></script>
 </head>
 
 <body>
@@ -60,37 +61,45 @@
     <div class="hero-foot">
       <nav class="tabs is-boxed">
         <div class="container">
-          <ul>
-            <li class="is-active"><a>Overview</a></li>
-            <li><a>Programming</a></li>
-            <li><a>Teaching</a></li>
-            <li><a>Courses & Certifications</a></li>
-            <li><a>Random</a></li>
+          <ul id="tabs-list">
+            <li class="is-active" data-tab="overview"><a>Overview</a></li>
+            <li data-tab="drawing"><a>Programming</a></li>
+            <li data-tab="cooking"><a>Teaching</a></li>
+            <li data-tab="crafting"><a>Courses & Certifications</a></li>
           </ul>
         </div>
       </nav>
     </div>
   </section>
   <section id="content">
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="overview-content">
+      <h1 class="title">Overview Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
       </h2>
     </section>
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="drawing-content" style="display: none;">
+      <h1 class="title">Drawing Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        Here are some of my favorite drawing projects.
       </h2>
     </section>
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="cooking-content" style="display: none;">
+      <h1 class="title">Cooking Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        Cooking is a passion of mine. Let me share some recipes.
+      </h2>
+    </section>
+    <section class="section is-medium" id="crafting-content" style="display: none;">
+      <h1 class="title">Crafting Section</h1>
+      <h2 class="subtitle">
+        Check out some of my handmade creations.
+      </h2>
+    </section>
+    <section class="section is-medium" id="languages-content" style="display: none;">
+      <h1 class="title">Languages Section</h1>
+      <h2 class="subtitle">
+        I enjoy learning different languages. Here's a bit about my journey.
       </h2>
     </section>
   </section>
