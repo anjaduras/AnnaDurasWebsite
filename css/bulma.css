@@ -34,9 +34,41 @@ h1 {
   font-style: normal;
 }
 
-p {
+*{
   font-family: "Figtree", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+/* Style the form container */
+#contactForm {
+  max-width: 600px; /* Set the form width */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 13px; /* Rounded corners for the form */
+}
+
+/* Style the input fields */
+#contactForm input,
+#contactForm textarea {
+  width: 100%; /* Full width of the form container */
+  padding: 10px; /* Space inside the input fields */
+  margin-bottom: 10px; /* Space between fields */
+  border-radius: 13px; /* Rounded corners for input fields */
+  border: 1px solid #ddd; /* Light border */
+}
+
+.center-button {
+  display: block;
+  width: 200px; /* Set the width to a smaller size */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 13px; /* Round the corners */
+}
+
+/* Button color on hover */
+.center-button:hover {
+  background-color: rgb(227, 138, 183); /* Pink color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
