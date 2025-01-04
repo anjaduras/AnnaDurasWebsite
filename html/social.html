@@ -7,6 +7,7 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="../css/bulma.css">
+    <script src="../js/tabs.js"></script>
 </head>
 
 <body>
@@ -29,15 +30,9 @@
                     </div>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active" href="./main.html"> Home </a>
-                            <a class="navbar-item"> Theme1 </a>
-                            <a class="navbar-item"> Button2 </a>
                             <span class="navbar-item">
-                                <a class="button is-primary is-inverted">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>Download</span>
+                                <a class="button is-primary is-inverted" href="main.html">
+                                    <span>&#x21AB; Home</span>
                                 </a>
                             </span>
                         </div>
@@ -60,36 +55,40 @@
         <div class="hero-foot">
             <nav class="tabs is-boxed">
                 <div class="container">
-                    <ul>
-                        <li class="is-active"><a>Overview</a></li>
-                        <li><a>Volunteering</a></li>
-                        <li><a>Erasmus</a></li>
-                        <li><a>Collaborations</a></li>
+                    <ul id="tabs-list">
+                        <li class="is-active" data-tab="overview"><a>Overview &#x21A7;</a></li>
+                        <li data-tab="drawing"><a>Volunteering</a></li>
+                        <li data-tab="cooking"><a>Erasmus</a></li>
+                        <li data-tab="crafting"><a>Collaborations</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
     <section id="content">
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
+        <section class="section is-medium" id="overview-content">
+            <h1 class="title">Overview Section</h1>
             <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
+                A simple container to divide your page into <strong>sections</strong>, like the one you're currently
+                reading.
             </h2>
         </section>
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
+        <section class="section is-medium" id="drawing-content" style="display: none;">
+            <h1 class="title">Volunteering Section</h1>
             <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
+                Here are some of my favorite Volunteering projects.
             </h2>
         </section>
-        <section class="section is-medium">
-            <h1 class="title">Medium section</h1>
+        <section class="section is-medium" id="cooking-content" style="display: none;">
+            <h1 class="title">Erasmus Section</h1>
             <h2 class="subtitle">
-                A simple container to divide your page into <strong>sections</strong>, like
-                the one you're currently reading.
+                Telling you my exciting Erasmus experience.
+            </h2>
+        </section>
+        <section class="section is-medium" id="crafting-content" style="display: none;">
+            <h1 class="title">Collaborations Section</h1>
+            <h2 class="subtitle">
+                Check out some of my Collaborations.
             </h2>
         </section>
     </section>

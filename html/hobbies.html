@@ -7,93 +7,97 @@
   <title>Hello Bulma!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <link rel="stylesheet" href="../css/bulma.css">
+  <script src="../js/tabs.js"></script>
 </head>
 
 <body>
   <section class="hero is-primary is-medium"
-  style="background-image: url('../images/hobbyhero.jpg'); background-size: cover; background-position: center; position: relative;">
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
-          </a>
-          <span class="navbar-burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active" href="./main.html"> Home </a>
-            <a class="navbar-item"> Theme1 </a>
-            <a class="navbar-item"> Button2 </a>
-            <span class="navbar-item">
-              <a class="button is-primary is-inverted">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Download</span>
-              </a>
+    style="background-image: url('../images/hobbyhero.jpg'); background-size: cover; background-position: center; position: relative;">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Logo" />
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </span>
           </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+                <span class="navbar-item">
+                    <a class="button is-primary is-inverted" href="main.html">
+                        <span>&#x21AB; Home</span>
+                    </a>
+                </span>
+            </div>
         </div>
-      </div>
-    </nav>
-  </div>
-
-  <!-- Hero content: will be in the middle -->
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title" style="font-size: 80px; position: relative;">My hobbies</h1>
-      <p class="subtitle">Drawing, crafting and languages</p>
+        </div>
+      </nav>
     </div>
-    
-    <!-- Left and Right GIFs -->
-    <img src="../images/craft.webp" alt="Left Gif" class="largegif-overlay-left">
-    <img src="../images/craft.webp" alt="Right Gif" class="largegif-overlay-right">
-  </div>
 
-  <!-- Hero footer: will stick at the bottom -->
-  <div class="hero-foot">
-    <nav class="tabs is-boxed">
-      <div class="container">
-        <ul>
-          <li class="is-active"><a>Overview</a></li>
-          <li><a>Drawing</a></li>
-          <li><a>Cooking</a></li>
-          <li><a>Crafting</a></li>
-          <li><a>Languages</a></li>
-        </ul>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title" style="font-size: 80px; position: relative;">My hobbies</h1>
+        <p class="subtitle">Drawing, crafting and languages</p>
       </div>
-    </nav>
-  </div>
-</section>
+
+      <!-- Left and Right GIFs -->
+      <img src="../images/craft.webp" alt="Left Gif" class="largegif-overlay-left">
+      <img src="../images/craft.webp" alt="Right Gif" class="largegif-overlay-right">
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed">
+        <div class="container">
+          <ul id="tabs-list">
+            <li class="is-active" data-tab="overview"><a>Overview &#x21A7;</a></li>
+            <li data-tab="drawing"><a>Drawing</a></li>
+            <li data-tab="cooking"><a>Cooking</a></li>
+            <li data-tab="crafting"><a>Crafting</a></li>
+            <li data-tab="languages"><a>Language Learning</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
 
   <section id="content">
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="overview-content">
+      <h1 class="title">Overview Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
       </h2>
     </section>
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="drawing-content" style="display: none;">
+      <h1 class="title">Drawing Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        Here are some of my favorite drawing projects.
       </h2>
     </section>
-    <section class="section is-medium">
-      <h1 class="title">Medium section</h1>
+    <section class="section is-medium" id="cooking-content" style="display: none;">
+      <h1 class="title">Cooking Section</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like
-        the one you're currently reading.
+        Cooking is a passion of mine. Let me share some recipes.
+      </h2>
+    </section>
+    <section class="section is-medium" id="crafting-content" style="display: none;">
+      <h1 class="title">Crafting Section</h1>
+      <h2 class="subtitle">
+        Check out some of my handmade creations.
+      </h2>
+    </section>
+    <section class="section is-medium" id="languages-content" style="display: none;">
+      <h1 class="title">Languages Section</h1>
+      <h2 class="subtitle">
+        I enjoy learning different languages. Here's a bit about my journey.
       </h2>
     </section>
   </section>
