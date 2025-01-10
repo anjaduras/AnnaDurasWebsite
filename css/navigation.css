@@ -1,0 +1,26 @@
+/* Style for when the navbar menu is active */
+.navbar-menu.is-active {
+    display: block;
+}
+
+/* Hide the navbar menu by default */
+.navbar-menu {
+    display: none;
+}
+
+/* Additional styling for the burger icon when active (optional) */
+.navbar-burger.is-active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+}
